@@ -1,0 +1,189 @@
+1,Dầu khí,,,,1
+500,Dầu khí,Dầu khí,,,2
+530,Dầu khí,Dầu khí,Sản xuất dầu khí,Sản xuất dầu khí,3
+533,Dầu khí,Dầu khí,Sản xuất dầu khí,Thăm dò và sản xuất dầu khí,4
+537,Dầu khí,Dầu khí,Sản xuất dầu khí,Dầu khí tích hợp,4
+570,Dầu khí,Dầu khí,"Thiết bị, dịch vụ và phân phối dầu khí","Thiết bị, dịch vụ và phân phối dầu khí",3
+573,Dầu khí,Dầu khí,"Thiết bị, dịch vụ và phân phối dầu khí","Thiết bị, dịch vụ khai thác dầu mỏ",4
+577,Dầu khí,Dầu khí,"Thiết bị, dịch vụ và phân phối dầu khí",Ống dẫn dầu khí,4
+580,Dầu khí,Dầu khí,Năng lượng thay thế,Năng lượng thay thế,3
+583,Dầu khí,Dầu khí,Năng lượng thay thế,Thiết bị năng lượng tái tạo,4
+587,Dầu khí,Dầu khí,Năng lượng thay thế,Nhiên liệu thay thế,4
+1000,Vật liệu cơ bản,,,,1
+1300,Vật liệu cơ bản,Hóa chất,,Hóa chất,2
+1350,Vật liệu cơ bản,Hóa chất,Hóa chất,Hóa chất,3
+1353,Vật liệu cơ bản,Hóa chất,Hóa chất,"Hóa chất cơ bản - Sản phẩm nhựa, cao su, hóa chất",4
+1357,Vật liệu cơ bản,Hóa chất,Hóa chất,Hóa chất chuyên dụng,4
+1700,Vật liệu cơ bản,Tài nguyên cơ bản,,,2
+1730,Vật liệu cơ bản,Tài nguyên cơ bản,Lâm nghiệp và giấy,Lâm nghiệp và giấy,3
+1733,Vật liệu cơ bản,Tài nguyên cơ bản,Lâm nghiệp và giấy,"Trồng rừng, khai thác gỗ và kinh doanh lâm sản",4
+1737,Vật liệu cơ bản,Tài nguyên cơ bản,Lâm nghiệp và giấy,Giấy,4
+1750,Vật liệu cơ bản,Tài nguyên cơ bản,Kim loại công nghiệp,Kim loại công nghiệp,3
+1753,Vật liệu cơ bản,Tài nguyên cơ bản,Kim loại công nghiệp,Nhôm,4
+1755,Vật liệu cơ bản,Tài nguyên cơ bản,Kim loại công nghiệp,Kim loại màu,4
+1757,Vật liệu cơ bản,Tài nguyên cơ bản,Kim loại công nghiệp,Thép,4
+1770,Vật liệu cơ bản,Tài nguyên cơ bản,Khai khoáng,Khai khoáng,3
+1771,Vật liệu cơ bản,Tài nguyên cơ bản,Khai khoáng,Khai thác than,4
+1773,Vật liệu cơ bản,Tài nguyên cơ bản,Khai khoáng,Kim cương và đá quý,4
+1775,Vật liệu cơ bản,Tài nguyên cơ bản,Khai khoáng,Khai khoáng chung,4
+1777,Vật liệu cơ bản,Tài nguyên cơ bản,Khai khoáng,Khai thác vàng,4
+1779,Vật liệu cơ bản,Tài nguyên cơ bản,Khai khoáng,Khai thác bạch kim và các kim loại quý khác,4
+2000,Công nghiệp,,,,1
+2300,Công nghiệp,Xây dựng và vật liệu xây dựng,,,2
+2350,Công nghiệp,Xây dựng và vật liệu xây dựng,Xây dựng và vật liệu xây dựng,Xây dựng và vật liệu xây dựng,3
+2353,Công nghiệp,Xây dựng và vật liệu xây dựng,Xây dựng và vật liệu xây dựng,"Thiết bị, vật liệu xây dựng",4
+2357,Công nghiệp,Xây dựng và vật liệu xây dựng,Xây dựng và vật liệu xây dựng,"Xây dựng, xây lắp",4
+2700,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,,,2
+2710,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,Công nghiệp hàng không vũ trụ và quốc phòng,,3
+2713,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,Công nghiệp hàng không vũ trụ và quốc phòng,Công nghiệp hàng không vũ trụ,4
+2717,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,Công nghiệp hàng không vũ trụ và quốc phòng,Công nghiệp quốc phòng,4
+2720,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,Công nghiệp đa dụng,,3
+2723,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,Công nghiệp đa dụng,"Thùng, hộp, bao bì",4
+2727,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,Công nghiệp đa dụng,Công nghiệp đa ngành,4
+2730,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Thiết bị điện, điện tử",,3
+2733,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Thiết bị điện, điện tử",Các linh kiện và thiết bị điện,4
+2737,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Thiết bị điện, điện tử",Các thiết bị điện tử,4
+2750,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Cơ khí, chế tạo máy",,3
+2753,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Cơ khí, chế tạo máy",Các phương tiện thương mại và xe thùng,4
+2757,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Cơ khí, chế tạo máy",Máy công nghiệp,4
+2770,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Vận tải, kho bãi",,3
+2771,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Vận tải, kho bãi",Dịch vụ bưu chính,4
+2773,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Vận tải, kho bãi",Vận tải biển,4
+2775,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Vận tải, kho bãi",Đường sắt,4
+2777,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Vận tải, kho bãi",Dịch vụ vận tải,4
+2779,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Vận tải, kho bãi",Xe tải,4
+2790,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Dịch vụ hỗ trợ, tư vấn, thiết kế",,3
+2791,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Dịch vụ hỗ trợ, tư vấn, thiết kế",Các dịch vụ hỗ trợ kinh doanh,4
+2793,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Dịch vụ hỗ trợ, tư vấn, thiết kế",Đào tạo nhân sự và việc làm,4
+2795,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Dịch vụ hỗ trợ, tư vấn, thiết kế","Điều hành, theo dõi tài chính",4
+2797,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Dịch vụ hỗ trợ, tư vấn, thiết kế",Các nhà cung cấp công nghiệp,4
+2799,Công nghiệp,Các sản phẩm và dịch vụ công nghiệp,"Dịch vụ hỗ trợ, tư vấn, thiết kế","Dịch vụ xử lý nước thải, rác thải",4
+3000,Hàng tiêu dùng,,,,1
+3300,Hàng tiêu dùng,Ôtô và linh kiện ôtô,,,2
+3350,Hàng tiêu dùng,Ôtô và linh kiện ôtô,Ôtô và linh kiện ôtô,,3
+3353,Hàng tiêu dùng,Ôtô và linh kiện ôtô,Ôtô và linh kiện ôtô,Ô tô,4
+3355,Hàng tiêu dùng,Ôtô và linh kiện ôtô,Ôtô và linh kiện ôtô,Linh kiện ôtô,4
+3357,Hàng tiêu dùng,Ôtô và linh kiện ôtô,Ôtô và linh kiện ôtô,Lốp,4
+3500,Hàng tiêu dùng,Thực phẩm và đồ uống,,,2
+3530,Hàng tiêu dùng,Thực phẩm và đồ uống,Đồ uống,,3
+3533,Hàng tiêu dùng,Thực phẩm và đồ uống,Đồ uống,Bia,4
+3535,Hàng tiêu dùng,Thực phẩm và đồ uống,Đồ uống,Chưng cất và bán rượu,4
+3537,Hàng tiêu dùng,Thực phẩm và đồ uống,Đồ uống,Nước giải khát,4
+3570,Hàng tiêu dùng,Thực phẩm và đồ uống,Sản xuất thực phẩm,,3
+3573,Hàng tiêu dùng,Thực phẩm và đồ uống,Sản xuất thực phẩm,"Nông sản, thủy sản, đồn điền",4
+3577,Hàng tiêu dùng,Thực phẩm và đồ uống,Sản xuất thực phẩm,Sản phẩm thực phẩm,4
+3700,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,,,2
+3720,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Hàng gia dụng,,3
+3722,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Hàng gia dụng,Sản phẩm gia dụng lâu bền,4
+3724,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Hàng gia dụng,Sản phẩm gia dụng không lâu bền,4
+3726,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Hàng gia dụng,Nội thất,4
+3728,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Hàng gia dụng,Xây dựng nhà ở,4
+3740,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Hàng tiêu khiển,,3
+3743,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Hàng tiêu khiển,Đồ điện tử tiêu dùng,4
+3745,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Hàng tiêu khiển,Sản phẩm tiêu khiển,4
+3747,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Hàng tiêu khiển,Đồ chơi,4
+3760,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Đồ dùng cá nhân,,3
+3763,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Đồ dùng cá nhân,Quần áo và đồ phụ kiện,4
+3765,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Đồ dùng cá nhân,Da giầy,4
+3767,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Sản phẩm cá nhân,Sản phẩm cá nhân,4
+3780,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Sản phẩm cá nhân,,3
+3785,Hàng tiêu dùng,Hàng tiêu dùng cá nhân và gia đình,Sản phẩm cá nhân,Thuốc lá,4
+4000,Y tế,,,,1
+4500,Y tế,Y tế,,,2
+4530,Y tế,Y tế,Thiết bị và dịch vụ y tế,,3
+4533,Y tế,Y tế,Thiết bị và dịch vụ y tế,Các nhà cung cấp dịch vụ y tế,4
+4535,Y tế,Y tế,Thiết bị và dịch vụ y tế,Trang thiết bị y tế,4
+4537,Y tế,Y tế,Thiết bị và dịch vụ y tế,Vật tư y tế,4
+4570,Y tế,Y tế,Dược phẩm và công nghệ sinh học,,3
+4573,Y tế,Y tế,Dược phẩm và công nghệ sinh học,Công nghệ sinh học,4
+4577,Y tế,Y tế,Dược phẩm và công nghệ sinh học,Dược phẩm,4
+5000,Dịch vụ tiêu dùng,,,,1
+5300,Dịch vụ tiêu dùng,Bán lẻ,,,2
+5330,Dịch vụ tiêu dùng,Bán lẻ,Bán lẻ thực phẩm và dược phẩm,,3
+5333,Dịch vụ tiêu dùng,Bán lẻ,Bán lẻ thực phẩm và dược phẩm,Bán lẻ thuốc,4
+5337,Dịch vụ tiêu dùng,Bán lẻ,Bán lẻ thực phẩm và dược phẩm,Bán buôn bán lẻ thực phẩm,4
+5370,Dịch vụ tiêu dùng,Bán lẻ,Bán lẻ chung,,3
+5371,Dịch vụ tiêu dùng,Bán lẻ,Bán lẻ chung,Bán lẻ đồ may mặc,4
+5373,Dịch vụ tiêu dùng,Bán lẻ,Bán lẻ chung,Bán lẻ tổng hợp,4
+5375,Dịch vụ tiêu dùng,Bán lẻ,Bán lẻ chung,Bán lẻ đồ nội thất,4
+5377,Dịch vụ tiêu dùng,Bán lẻ,Bán lẻ chung,Dịch vụ tiêu dùng đặc chủng,4
+5379,Dịch vụ tiêu dùng,Bán lẻ,Bán lẻ chung,Bán lẻ đặc chủng,4
+5500,Dịch vụ tiêu dùng,Truyền thông,,,2
+5550,Dịch vụ tiêu dùng,Truyền thông,Truyền thông,,3
+5553,Dịch vụ tiêu dùng,Truyền thông,Truyền thông,Phát thanh truyền hình,4
+5555,Dịch vụ tiêu dùng,Truyền thông,Truyền thông,Các công ty truyền thông,4
+5557,Dịch vụ tiêu dùng,Truyền thông,Truyền thông,Xuất bản,4
+5700,Dịch vụ tiêu dùng,Du lịch và giải trí,,,2
+5750,Dịch vụ tiêu dùng,Du lịch và giải trí,Du lịch và giải trí,,3
+5751,Dịch vụ tiêu dùng,Du lịch và giải trí,Du lịch và giải trí,Hàng không chở khách,4
+5752,Dịch vụ tiêu dùng,Du lịch và giải trí,Du lịch và giải trí,Cờ bạc,4
+5753,Dịch vụ tiêu dùng,Du lịch và giải trí,Du lịch và giải trí,Khách sạn,4
+5755,Dịch vụ tiêu dùng,Du lịch và giải trí,Du lịch và giải trí,Dịch vụ giải trí,4
+5757,Dịch vụ tiêu dùng,Du lịch và giải trí,Du lịch và giải trí,Nhà hàng và bar,4
+5759,Dịch vụ tiêu dùng,Du lịch và giải trí,Du lịch và giải trí,Du lịch,4
+6000,Viễn thông,,,,1
+6500,Viễn thông,Viễn thông,,,2
+6530,Viễn thông,Viễn thông,Viễn thông cố định,,3
+6535,Viễn thông,Viễn thông,Viễn thông cố định,Viễn thông cố định,4
+6570,Viễn thông,Viễn thông,Viễn thông di động,,3
+6575,Viễn thông,Viễn thông,Viễn thông di động,Viễn thông di động,4
+7000,Các dịch vụ hạ tầng,,,,1
+7500,Các dịch vụ hạ tầng,Các dịch vụ hạ tầng,,,2
+7530,Các dịch vụ hạ tầng,Các dịch vụ hạ tầng,Điện,,3
+7535,Các dịch vụ hạ tầng,Các dịch vụ hạ tầng,Điện,Sản xuất và cung cấp điện truyền thống,4
+7537,Các dịch vụ hạ tầng,Các dịch vụ hạ tầng,Điện,Sản xuất và cung cấp điện bằng năng lượng thay thế,4
+7570,Các dịch vụ hạ tầng,Các dịch vụ hạ tầng,"Ga, nước và các tiện ích khác",,3
+7573,Các dịch vụ hạ tầng,Các dịch vụ hạ tầng,"Ga, nước và các tiện ích khác",Phân phối khí đốt,4
+7575,Các dịch vụ hạ tầng,Các dịch vụ hạ tầng,"Ga, nước và các tiện ích khác",Đa tiện ích,4
+7577,Các dịch vụ hạ tầng,Các dịch vụ hạ tầng,"Ga, nước và các tiện ích khác",Cung cấp nước sạch,4
+8000,Tài chính,,,,1
+8300,Tài chính,Ngân hàng,,,2
+8350,Tài chính,Ngân hàng,Ngân hàng,,3
+8355,Tài chính,Ngân hàng,Ngân hàng,Ngân hàng,4
+8500,Tài chính,Bảo hiểm,,,2
+8530,Tài chính,Bảo hiểm,Bảo hiểm phi nhân thọ,,3
+8532,Tài chính,Bảo hiểm,Bảo hiểm phi nhân thọ,Các công ty bảo hiểm tổng hợp,4
+8534,Tài chính,Bảo hiểm,Bảo hiểm phi nhân thọ,Môi giới bảo hiểm,4
+8536,Tài chính,Bảo hiểm,Bảo hiểm phi nhân thọ,Bảo hiểm tài sản và tai nạn,4
+8538,Tài chính,Bảo hiểm,Bảo hiểm phi nhân thọ,Tái bảo hiểm,4
+8570,Tài chính,Bảo hiểm,Bảo hiểm nhân thọ,,3
+8575,Tài chính,Bảo hiểm,Bảo hiểm nhân thọ,Bảo hiểm nhân thọ,4
+8580,Tài chính,Bảo hiểm,Công ty bảo hiểm,,3
+8581,Tài chính,Bảo hiểm,Công ty bảo hiểm,Công ty bảo hiểm,4
+8600,Tài chính,Bất động sản,,,2
+8630,Tài chính,Bất động sản,Đầu tư bất động sản và dịch vụ,,3
+8633,Tài chính,Bất động sản,Đầu tư bất động sản và dịch vụ,Các công ty đầu cơ và phát triển bất động sản,4
+8637,Tài chính,Bất động sản,Đầu tư bất động sản và dịch vụ,Dịch vụ bất động sản,4
+8670,Tài chính,Bất động sản,Đầu tư tín thác bất động sản,,3
+8671,Tài chính,Bất động sản,Đầu tư tín thác bất động sản,Tín thác đầu tư bất động sản công nghiệp và văn phòng,4
+8672,Tài chính,Bất động sản,Đầu tư tín thác bất động sản,Tín thác đầu tư bất động sản bán lẻ,4
+8673,Tài chính,Bất động sản,Đầu tư tín thác bất động sản,Tín thác đầu tư bất động sản nhà ở,4
+8674,Tài chính,Bất động sản,Đầu tư tín thác bất động sản,Tín thác đầu tư bất động sản đa dạng,4
+8675,Tài chính,Bất động sản,Đầu tư tín thác bất động sản,Tín thác đầu tư bất động sản đặc biệt,4
+8676,Tài chính,Bất động sản,Đầu tư tín thác bất động sản,Tín thác đầu tư bất động sản thế chấp,4
+8677,Tài chính,Bất động sản,Đầu tư tín thác bất động sản,Tín thác đầu tư bất động sản khách sạn và nhà nghỉ,4
+8700,Tài chính,Dịch vụ tài chính,,,2
+8770,Tài chính,Dịch vụ tài chính,Tài chính tổng hợp,,3
+8771,Tài chính,Dịch vụ tài chính,Tài chính tổng hợp,Quản lý tài sản,4
+8773,Tài chính,Dịch vụ tài chính,Tài chính tổng hợp,Tài chính bán lẻ,4
+8775,Tài chính,Dịch vụ tài chính,Tài chính tổng hợp,Tài chính đặc thù,4
+8777,Tài chính,Dịch vụ tài chính,Tài chính tổng hợp,Dịch vụ tài chính,4
+8779,Tài chính,Dịch vụ tài chính,Tài chính tổng hợp,Tài chính thế chấp,4
+8780,Tài chính,Dịch vụ tài chính,Công ty Chứng khoán,,3
+8781,Tài chính,Dịch vụ tài chính,Công ty Chứng khoán,Công ty Chứng khoán,4
+8900,Tài chính,Đầu tư chứng khoán/phi chứng khoán,,,2
+8980,Tài chính,Đầu tư chứng khoán/phi chứng khoán,Quỹ đóng,,3
+8985,Tài chính,Đầu tư chứng khoán/phi chứng khoán,Quỹ đóng,Quỹ đóng,4
+8990,Tài chính,Đầu tư chứng khoán/phi chứng khoán,Quỹ mở,,3
+8995,Tài chính,Đầu tư chứng khoán/phi chứng khoán,Quỹ mở,Quỹ mở,4
+9000,Công nghệ,,,,1
+9500,Công nghệ,Công nghệ,,,2
+9530,Công nghệ,Công nghệ,Phần mềm và dịch vụ điện toán,,3
+9533,Công nghệ,Công nghệ,Phần mềm và dịch vụ điện toán,Dịch vụ điện toán,4
+9535,Công nghệ,Công nghệ,Phần mềm và dịch vụ điện toán,Dịch vụ internet,4
+9537,Công nghệ,Công nghệ,Phần mềm và dịch vụ điện toán,Công nghệ phần mềm,4
+9570,Công nghệ,Công nghệ,Công nghệ phần cứng và thiết bị,,3
+9572,Công nghệ,Công nghệ,Công nghệ phần cứng và thiết bị,Công nghệ phần cứng,4
+9574,Công nghệ,Công nghệ,Công nghệ phần cứng và thiết bị,Thiết bị điện tử văn phòng,4
+9576,Công nghệ,Công nghệ,Công nghệ phần cứng và thiết bị,Thiết bị bán dẫn,4
+9578,Công nghệ,Công nghệ,Công nghệ phần cứng và thiết bị,Thiết bị viễn thông,4
