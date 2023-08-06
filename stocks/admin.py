@@ -14,15 +14,7 @@ class CategoryListFilter(admin.SimpleListFilter):
         categories = StockCategory.objects.filter(level__in=[1, 2, 3, 4])
         categories_data = []
         for category in categories:
-            icb_name = category.name
-            if category.level == 1:
-                icb_name = f"{category.icb_code} " + icb_name
-            elif category.level == 2:
-                icb_name = f"--{category.icb_code} " + icb_name
-            elif category.level == 3:
-                icb_name = f"----{category.icb_code} " + icb_name
-            elif category.level == 4:
-                icb_name = f"------{category.icb_code} " + icb_name
+            icb_name = f"{(category.level-1) * 2 * '-'}" + f" {category.icb_code} " + category.name
             categories_data.append((category.icb_code, icb_name))
         return categories_data
 
