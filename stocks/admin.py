@@ -11,14 +11,18 @@ class CategoryListFilter(admin.SimpleListFilter):
 
     def lookups(self, request, model_admin):
         # generate the list of choices
-        categories = StockCategory.objects.filter(level__in=[1,2,3])
+        categories = StockCategory.objects.filter(level__in=[1, 2, 3, 4])
         categories_data = []
         for category in categories:
             icb_name = category.name
-            if category.level == 2:
-                icb_name = "-- " + icb_name
+            if category.level == 1:
+                icb_name = f"{category.icb_code} " + icb_name
+            elif category.level == 2:
+                icb_name = f"--{category.icb_code} " + icb_name
             elif category.level == 3:
-                icb_name = "---- " + icb_name
+                icb_name = f"----{category.icb_code} " + icb_name
+            elif category.level == 4:
+                icb_name = f"------{category.icb_code} " + icb_name
             categories_data.append((category.icb_code, icb_name))
         return categories_data
 
@@ -26,7 +30,9 @@ class CategoryListFilter(admin.SimpleListFilter):
         # filter the queryset by the selected value
         value = self.value()
         if value is not None:
-            ft = Q(Q(category_id__parent_id_level_1=self.value()) | Q(category_id__parent_id_level_2=self.value()) | Q(category_id__parent_id_level_3=self.value()))
+            ft = Q(
+                Q(category_id__parent_id_level_1=self.value()) | Q(category_id__parent_id_level_2=self.value()) | Q(category_id__parent_id_level_3=self.value()) | Q(category_id__icb_code=self.value())
+            )
             return queryset.filter(ft)
         return queryset
 
@@ -45,6 +51,7 @@ class StockDividendHistoryAdmin(admin.ModelAdmin):
         return obj.exercise_date.strftime('%Y-%m-%d')
     list_display = ('code', 'cash_year', 'formatted_exercise_date', 'cash_dividend_percentage', 'issue_method')
     ordering = ('-cash_year', '-exercise_date')
+    search_fields = ["code"]
 
 
 
