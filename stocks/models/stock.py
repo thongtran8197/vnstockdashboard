@@ -18,7 +18,9 @@ class Stock(models.Model):
     id = models.AutoField(primary_key=True)
     code = models.CharField(max_length=10)
     name = models.CharField(max_length=500)
-    category = models.ForeignKey(StockCategory, on_delete=models.CASCADE, related_name="stocks")
+    category = models.ForeignKey(
+        StockCategory, on_delete=models.CASCADE, related_name="stocks"
+    )
 
     class Meta:
         db_table = "vn_stocks"
@@ -37,6 +39,19 @@ class StockDividendHistory(models.Model):
         verbose_name = "dividend historie"
 
 
+class StockHistorical(models.Model):
+    """Price by day"""
 
+    id = models.AutoField(primary_key=True)
+    stock = models.ForeignKey(
+        Stock, on_delete=models.CASCADE, related_name="stock_historical"
+    )
+    date = models.DateField()
+    open = models.FloatField()
+    high = models.FloatField()
+    low = models.FloatField()
+    close = models.FloatField()
+    volume = models.FloatField()
 
-
+    class Meta:
+        db_table = "vn_stock_historical_data"

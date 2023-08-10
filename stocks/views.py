@@ -12,4 +12,3 @@ class StockViewSet(viewsets.ViewSet):
         stocks = Stock.objects.order_by("id").all()
         stocks_data = StockSerializer(stocks, many=True).data
         return Response(stocks_data, status=status.HTTP_200_OK)
-

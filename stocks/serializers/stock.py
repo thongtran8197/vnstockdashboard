@@ -8,4 +8,4 @@ class StockSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Stock
-        fields = ('id', "code", "name", "icb_code")
+        fields = ("id", "code", "name", "icb_code")
