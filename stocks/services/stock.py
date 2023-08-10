@@ -8,9 +8,9 @@ from vnstock import *
 class StockService:
     @classmethod
     def import_vn_stock_category(cls):
-        file_path = os.getcwd() + '/stocks/fixtures/stockcategory.csv'
+        file_path = os.getcwd() + "/stocks/fixtures/stockcategory.csv"
         with open(file_path) as csv_file:
-            csv_reader = csv.reader(csv_file, delimiter=',')
+            csv_reader = csv.reader(csv_file, delimiter=",")
             stock_categories = []
             map_icb_code_lv1 = dict()
             map_icb_code_lv2 = dict()
@@ -54,18 +54,23 @@ class StockService:
 
     @classmethod
     def import_vn_stock(cls):
-        file_path = os.getcwd() + '/stocks/fixtures/stocks.csv'
+        file_path = os.getcwd() + "/stocks/fixtures/stocks.csv"
         with open(file_path) as csv_file:
-            csv_reader = csv.reader(csv_file, delimiter=',')
+            csv_reader = csv.reader(csv_file, delimiter=",")
             categories = StockCategory.objects.values("icb_code", "id")
             categories_map = {}
-            [categories_map.update({c.get("icb_code"): c.get("id")}) for c in categories]
+            [
+                categories_map.update({c.get("icb_code"): c.get("id")})
+                for c in categories
+            ]
             Stock.objects.all().delete()
             for row in csv_reader:
                 stock = Stock(
                     code=row[0],
                     name=row[1],
-                    category_id=categories_map.get(row[2].zfill(4) if len(row[2]) < 4 else row[2])
+                    category_id=categories_map.get(
+                        row[2].zfill(4) if len(row[2]) < 4 else row[2]
+                    ),
                 )
                 stock.save()
 
@@ -77,5 +82,18 @@ class StockService:
         except Exception:
             return None
 
-
-
+    @classmethod
+    def get_stock_historical_data(
+        self, stock_code: str, start_date: str, end_date: str
+    ):
+        try:
+            historical_data = stock_historical_data(
+                symbol=stock_code,
+                start_date=start_date,
+                end_date=end_date,
+                resolution="1D",
+                type="stock",
+            )
+            return historical_data
+        except Exception:
+            return None
