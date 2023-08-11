@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     # internal app
     "stocks",
     "dashboard_builders",
+    "dashboards",
 ]
 
 MIDDLEWARE = [

@@ -10,6 +10,11 @@ from related_admin import RelatedFieldAdmin
 class StockDashboardBuilderTemplateAdmin(admin.ModelAdmin):
     list_display = ("name",)
     search_fields = ["name"]
+    exclude = ["added_by"]
+
+    def save_model(self, request, obj, form, change):
+        obj.added_by = request.user
+        super().save_model(request, obj, form, change)
 
 
 @admin.register(StockDashboardBuilderItem)
