@@ -15,7 +15,7 @@ class DashboardService:
                 datasets.append(
                     dict(
                         type=ChartType.to_text(item.chart_type).lower(),
-                        label=item.label,
+                        label=item.name,
                         data=[100,150,100,180,100,112,81,329],
                         borderColor=item.color,
                         backgroundColor=item.color,

@@ -1,1 +1,1 @@
-from .dashboard import FakeDashboard
+from .dashboard import StockDashboard

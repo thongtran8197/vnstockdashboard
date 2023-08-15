@@ -3,11 +3,11 @@ import json
 from django.contrib import admin
 
 from dashboard_builders.models import StockDashboardBuilderTemplate
-from dashboards.models import FakeDashboard
+from dashboards.models import StockDashboard
 from dashboards.services.dashboard import DashboardService
 
 
-@admin.register(FakeDashboard)
+@admin.register(StockDashboard)
 class FakeDashboardAdmin(admin.ModelAdmin):
     def changelist_view(self, request, extra_context=None):
         chart_templates = DashboardService.get_builder_templates(user_id=request.user.id)

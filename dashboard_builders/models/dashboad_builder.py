@@ -31,7 +31,6 @@ class StockDashboardBuilderItem(models.Model):
         choices=BUILDER_ITEM_CHART_TYPE_CHOICES, default=ChartType.LINE
     )
     color = ColorField(default="#FF0000")
-    label = models.CharField(max_length=50)
 
     class Meta:
         db_table = "stock_dashboard_builder_items"
