@@ -10,7 +10,9 @@ from dashboards.services.dashboard import DashboardService
 @admin.register(StockDashboard)
 class FakeDashboardAdmin(admin.ModelAdmin):
     def changelist_view(self, request, extra_context=None):
-        chart_templates = DashboardService.get_builder_templates(user_id=request.user.id)
+        chart_templates = DashboardService.get_builder_templates(
+            user_id=request.user.id
+        )
         extra_context = extra_context or {"chart_templates": chart_templates}
         # Call the superclass changelist_view to render the page
         return super().changelist_view(request, extra_context=extra_context)

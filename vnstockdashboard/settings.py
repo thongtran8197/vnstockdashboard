@@ -45,10 +45,12 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # external app
     "colorfield",
+    "django_crontab",
     # internal app
     "stocks",
     "dashboard_builders",
     "dashboards",
+    "prices",
 ]
 
 MIDDLEWARE = [
@@ -137,3 +139,12 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Cron job
+CRONJOBS = [("*/2 * * * *", "prices.cron.crawl_input_price")]
+
+
+# SLACK SETTINGS
+SLACK_CRAWL_INPUT_GOODS_PRICE_WEBHOOK = (
+    "https://hooks.slack.com/services/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"
+)
