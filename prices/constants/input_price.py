@@ -148,6 +148,4 @@ VN_BIZ_GOODS_URLS = [
     "nhua_pvc_trung_quoc",
     "nhua_pp_trung_quoc",
     "cao_su",
-
-
 ]

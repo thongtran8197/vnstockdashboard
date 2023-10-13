@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     # external app
     "colorfield",
     "django_crontab",
+    "rangefilter",
+    "django_admin_multiple_choice_list_filter",
     # internal app
     "stocks",
     "dashboard_builders",
