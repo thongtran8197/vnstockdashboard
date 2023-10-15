@@ -1,0 +1,53 @@
+{% extends "admin/change_list.html" %}
+{% load static %}
+{% block content %}
+    <style>
+        #content h1 {
+            visibility: hidden;
+        }
+    </style>
+    <div>
+        <form id="filterForm">
+            <label for="input-price-type-select">Choose a type:</label>
+            <select name="input-price-type-select" id="input-price-type-select"></select>
+            <input type="submit" value="Load" name="_load">
+        </form>
+    </div>
+    <div class="chart-box">
+        <div class="chart-item">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+
+    const chart_data = {{ chart_data | safe }};
+    const myChart = new Chart(document.getElementById('myChart'), chart_data);
+
+    inputPriceTypes = {1: 'lon_hoi_trung_quoc', 2: 'heo_hoi', 3: 'bot_giay', 4: 'vai_coton', 5: 'dau_co_malaysia', 6: 'giay_gon_song_trung_quoc', 7: 'dau_nanh_my', 8: 'duong', 9: 'ca_phe', 10: 'tieu', 11: 'vai_cotton_my', 12: 'gao_tpxk', 13: 'tom_su', 14: 'tom_the', 15: 'lua', 16: 'gao_nguyen_lieu', 17: 'phu_pham_lua_gao', 18: 'quang_sat', 19: 'chi', 20: 'thiec', 21: 'kem', 22: 'nhom', 23: 'dong', 24: 'niken', 25: 'vang', 26: 'bac', 27: 'ure_trung_dong', 28: 'luu_huynh', 29: 'phot_pho', 30: 'xut_naoh_trung_quoc', 31: 'phan_dap_trung_quoc', 32: 'phan_urea_trung_quoc', 33: 'phan_ure', 34: 'thep_day_trung_quoc', 35: 'thep_thanh_trung_quoc', 36: 'x_m', 37: 'thep_phe_anh', 38: 'thep_thanh_anh', 39: 'hrc_trung_quoc', 40: 'da_0_4', 41: 'da_mi_sang', 42: 'da_1x2', 43: 'da_hoc', 44: 'ton_lanh_mau_hoa_sen_045mm', 45: 'ton_lanh_hoa_sen_045mm', 46: 'be_tong_nhua_min', 47: 'nhua_duong_60_70', 48: 'ong_nhua_27x18mm', 49: 'ong_nhua_60x2mm', 50: 'ong_nhua_90x29mm', 51: 'son_lot_khang_kiem_cao_cap', 52: 'son_noi_that_tieu_chuan', 53: 'son_ngoai_that_tieu_chuan', 54: 'kinh_mau_trang', 55: 'kinh_solar', 56: 'day_cap_dien', 57: 'xi_mang_pcb', 58: 'be_tong_mac_300', 59: 'gach_dat_set_nung', 60: 'coc_be_tong_du_ung_luc', 61: 'thep', 62: 'than_coc', 63: 'khi_lpg_trung_quoc', 64: 'dau_wti', 65: 'khi_thien_nhien', 66: 'than_newcastle', 67: 'xang_dau', 68: 'mazut', 69: 'cao_su_nhat_ban', 70: 'pet_trung_quoc', 71: 'nhua_pvc_trung_quoc', 72: 'nhua_pp_trung_quoc', 73: 'cao_su'};
+    const inputPriceTypeSelect = document.getElementById("input-price-type-select");
+
+    for (const [type_key, type_value] of Object.entries(inputPriceTypes)) {
+        let option = document.createElement("option");
+        option.value = type_key;
+        option.text = type_value;
+        inputPriceTypeSelect.append(option);
+    }
+    function reloadForm(event) {
+        event.preventDefault();
+        const input_price_type = inputPriceTypeSelect.value;
+        fetch(`/dashboards/input-price-chart?input_price_type=${input_price_type}`)
+        .then((response) => response.json())
+        .then((json) => {
+            myChart.data.datasets = json.data.data.datasets;
+            myChart.data.labels = json.data.data.labels;
+            myChart.update();
+        });
+    }
+    const filterForm = document.getElementById("filterForm");
+    filterForm.addEventListener("submit", reloadForm);
+
+
+</script>
+
+{% endblock %}

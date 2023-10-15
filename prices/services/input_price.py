@@ -25,7 +25,7 @@ class InputPriceService:
                 bulk_create_input_prices = []
                 type = VnBizGoodsUrlTypeMapping.get(good, 0)
                 for v in input_price_data:
-                    date = datetime.datetime.fromtimestamp(v[0]/1000)
+                    date = datetime.datetime.fromtimestamp(v[0] / 1000)
                     # Extract year, month, and day from the integer
                     bulk_create_input_prices.append(
                         InputPrice(

@@ -25,6 +25,5 @@ class DashboardService:
             template.update(
                 data=dict(datasets=datasets, labels=[1, 2, 4, 5, 6, 7, 8, 9])
             )
-            template.update(options={})
             templates.append(template)
         return templates

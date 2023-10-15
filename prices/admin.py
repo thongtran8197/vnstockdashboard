@@ -1,7 +1,9 @@
 import csv
 
 from django.contrib import admin
-from django_admin_multiple_choice_list_filter.list_filters import MultipleChoiceListFilter
+from django_admin_multiple_choice_list_filter.list_filters import (
+    MultipleChoiceListFilter,
+)
 
 from prices.constants.input_price import VN_BIZ_GOODS_URLS, VnBizGoodsUrlTypeMapping
 from prices.models import InputPrice
@@ -18,7 +20,12 @@ class InputPriceFilterType(MultipleChoiceListFilter):
         # generate the list of choices
         types = []
         for url in VN_BIZ_GOODS_URLS:
-            types.append((VnBizGoodsUrlTypeMapping.get(url), f"{VnBizGoodsUrlTypeMapping.get(url)} - {url}"))
+            types.append(
+                (
+                    VnBizGoodsUrlTypeMapping.get(url),
+                    f"{VnBizGoodsUrlTypeMapping.get(url)} - {url}",
+                )
+            )
         return types
 
     def queryset(self, request, queryset):
@@ -46,11 +53,7 @@ class InputPriceAdmin(admin.ModelAdmin):
         file_name = "hang_hoa"
         field_names = ["date", "year", "month", "day", "value", "unit", "type"]
         response = ExportCsvMixin.export_as_csv(
-            queryset,
-            **dict(
-                file_name=file_name,
-                field_names=field_names
-            )
+            queryset, **dict(file_name=file_name, field_names=field_names)
         )
         return response
 

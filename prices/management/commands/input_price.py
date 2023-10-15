@@ -18,7 +18,6 @@ class Command(BaseCommand):
         if options.get("crawl_vn_biz_goods_price"):
             self.crawl_vn_biz_goods_price()
 
-
     def crawl_vn_biz_goods_price(self):
         for url in VN_BIZ_GOODS_URLS:
             InputPriceService.crawl_goods_price(good=url)
