@@ -21,3 +21,7 @@ urlpatterns = [
     path("dashboards/", include("dashboards.urls")),
     path("", admin.site.urls),
 ]
+
+admin.site.site_header = "ChungKhoanVuiVe"
+admin.site.site_title = "ChungKhoanVuiVe"
+admin.site.index_title = "Welcome to ChungKhoanVuiVe"
