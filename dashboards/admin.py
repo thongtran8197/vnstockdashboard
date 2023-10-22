@@ -7,13 +7,13 @@ from dashboards.services.input_price_dashboard import InputPriceDashboardService
 from prices.constants.input_price import VnBizGoodsUrlTypeMapping
 
 
-class Dashboarad(FakeDashboard):
+class Dashboard(FakeDashboard):
     class Meta:
         proxy = True
         verbose_name = "Dashboard"
 
 
-@admin.register(Dashboarad)
+@admin.register(Dashboard)
 class DashboardAdmin(admin.ModelAdmin):
     change_list_template = "admin/dashboard.html"
 
