@@ -21,6 +21,6 @@ class Command(BaseCommand):
             self.crawl_vn_biz_goods_price()
 
     def crawl_vn_biz_goods_price(self):
-        from_date = datetime.strptime("2023-12-24", "%Y-%m-%d")
+        from_date = datetime.strptime("2023-10-24", "%Y-%m-%d")
         for url in VN_BIZ_GOODS_URLS:
             InputPriceService.crawl_goods_price(good=url, from_date=from_date)
