@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.core.management import BaseCommand
 
 from prices.constants.input_price import VN_BIZ_GOODS_URLS
@@ -19,5 +21,6 @@ class Command(BaseCommand):
             self.crawl_vn_biz_goods_price()
 
     def crawl_vn_biz_goods_price(self):
+        from_date = datetime.strptime("2023-12-24", "%Y-%m-%d")
         for url in VN_BIZ_GOODS_URLS:
-            InputPriceService.crawl_goods_price(good=url)
+            InputPriceService.crawl_goods_price(good=url, from_date=from_date)
