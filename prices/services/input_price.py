@@ -1,5 +1,6 @@
 import datetime
 import json
+import re
 
 import requests
 
@@ -11,6 +12,29 @@ class InputPriceService:
     domain_url = "https://api.wichart.vn/vietnambiz/vi-mo?"
 
     @classmethod
+    def convert_vietnamese(cls, text: str) -> str:
+        """
+        Convert from 'Tieng Viet co dau' thanh 'Tieng Viet khong dau'
+        text: input string to be converted
+        Return: string converted
+        """
+        patterns = {
+            '[àáảãạăắằẵặẳâầấậẫẩ]': 'a',
+            '[đ]': 'd',
+            '[èéẻẽẹêềếểễệ]': 'e',
+            '[ìíỉĩị]': 'i',
+            '[òóỏõọôồốổỗộơờớởỡợ]': 'o',
+            '[ùúủũụưừứửữự]': 'u',
+            '[ỳýỷỹỵ]': 'y'
+        }
+        output = text
+        for regex, replace in patterns.items():
+            output = re.sub(regex, replace, output)
+            # deal with upper case
+            output = re.sub(regex.upper(), replace.upper(), output)
+        return output
+
+    @classmethod
     def crawl_goods_price(cls, good: str, from_date):
         today = str(datetime.date.today())
         request_url = cls.domain_url + "key=hang_hoa&" + f"name={good}&to={today}"
@@ -20,7 +44,7 @@ class InputPriceService:
             chart_data = data.get("chart", {})
             series_data = chart_data.get("series", [])
             if series_data:
-                unit = series_data[0].get("unit", "")
+                unit = cls.convert_vietnamese(series_data[0].get("unit", ""))
                 input_price_data = series_data[0].get("data", [])
                 bulk_create_input_prices = []
                 type = VnBizGoodsUrlTypeMapping.get(good, 0)
